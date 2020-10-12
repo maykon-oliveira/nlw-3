@@ -1,3 +1,11 @@
+:root {
+  --primary-color-1: #29b6d1;
+  --primary-color-1-hover: #17d6eb;
+  --primary-color-2: #00c7c7;
+  --primary-color-2-hover: #96feff;
+  --primary-contrast-color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +13,7 @@
 }
 
 body {
-  color: #fff;
+  color: var(--primary-contrast-color);
   background: #ebf2f5;
 }
 
@@ -14,4 +22,13 @@ input,
 button,
 textarea {
   font: 600 18px Nunito, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    --primary-color-1: #000000;
+    --primary-color-1-hover: #434343;
+    --primary-color-2: #555555;
+    --primary-color-2-hover: #9d9c9c;
+  }
 }
