@@ -1,0 +1,21 @@
+{
+  "name": "nlw-3",
+  "version": "1.0.0",
+  "scripts": {
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maykon-oliveira/nlw-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maykon-oliveira/nlw-3/issues"
+  },
+  "homepage": "https://github.com/maykon-oliveira/nlw-3#readme",
+  "devDependencies": {
+    "standard-version": "^9.0.0"
+  }
+}

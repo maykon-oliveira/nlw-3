@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  happy-rn-web:
+    container_name: happy-rn-web
+    build: web/
+    ports:
+      - 1337:80
