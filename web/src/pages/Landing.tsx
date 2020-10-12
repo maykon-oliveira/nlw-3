@@ -1,10 +1,10 @@
-import React from "react";
-import { FiArrowRight } from "react-icons/fi";
+import React from 'react';
+import { FiArrowRight } from 'react-icons/fi';
 
-import "../styles/pages/landing.css";
+import '../styles/pages/landing.scss';
 
-import logoImg from "../images/logo.svg";
-import { Link } from "react-router-dom";
+import logoImg from '../images/logo.svg';
+import { Link } from 'react-router-dom';
 
 const Landing: React.FC = () => {
   return (

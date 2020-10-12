@@ -12,7 +12,7 @@ function Routes() {
         <Route path="/app" component={OrphanagesMap} />
       </Switch>
     </BrowserRouter>
-  )
+  );
 }
 
 export default Routes;

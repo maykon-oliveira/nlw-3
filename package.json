@@ -2,6 +2,8 @@
   "name": "nlw-3",
   "version": "1.1.0",
   "scripts": {
+    "format:check": "prettier --list-different 'web/**'",
+    "format:write": "prettier --write 'web/**'",
     "release": "standard-version"
   },
   "repository": {
@@ -16,6 +18,20 @@
   },
   "homepage": "https://github.com/maykon-oliveira/nlw-3#readme",
   "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
     "standard-version": "^9.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "projects/**/*.ts": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

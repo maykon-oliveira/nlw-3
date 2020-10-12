@@ -7,7 +7,7 @@ import 'leaflet/dist/leaflet.css';
 
 import mapMarkerImg from '../images/map-marker.svg';
 
-import '../styles/pages/orphanages-map.css';
+import '../styles/pages/orphanages-map.scss';
 
 const OrphanagesMap: React.FC = () => {
   return (
@@ -21,17 +21,13 @@ const OrphanagesMap: React.FC = () => {
         </header>
 
         <footer>
-          <strong>Brasília</strong>
-          <span>Distrito Federal</span>
+          <strong>Parnamirim</strong>
+          <span>Rio Grande do Norte</span>
         </footer>
       </aside>
 
-      <Map
-        center={[-15.7966153, -47.8770008]}
-        zoom={15}
-        style={{ width: '100%', height: '100%' }}
-      >
-        <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`} />
+      <Map center={[-5.9148554, -35.2702621]} zoom={15} style={{ width: '100%', height: '100%' }}>
+        <TileLayer url={`https://a.tile.openstreetmap.org/{z}/{x}/{y}.png`} />
       </Map>
 
       <Link to="" className="create-orphanage">
@@ -39,6 +35,6 @@ const OrphanagesMap: React.FC = () => {
       </Link>
     </div>
   );
-}
+};
 
 export default OrphanagesMap;
